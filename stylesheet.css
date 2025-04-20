@@ -95,6 +95,7 @@ section{
     font-size: 1em;
     position: absolute;
     top: 120px;
+    z-index: 1;
   }
 
   #contact-us {
@@ -130,6 +131,7 @@ section{
     font-size: 1em;
     position: absolute;
     top: 80px;
+    z-index: 1;
   }
   .slide{
     display: flex;
@@ -149,7 +151,7 @@ section{
 .slider-track {
   display: flex;
   width: max-content;
-  animation: scroll 9s alternate infinite;
+  animation: scroll 8s alternate infinite;
 }
 
 .slide-item {
@@ -163,17 +165,22 @@ section{
   width: 50vw;
   
 }
+.slide-item-img{
+  height: 30vw;
+  width: 40vw;
+}
 
 /* Animation */
 @keyframes scroll {
-  0%   { transform: translateX(30%); }
-  100% { transform: translateX(-50%); }
+  0%   { transform: translateX(20%); }
+  100% { transform: translateX(-30%); }
 }
 
 
   
   .category-container{
-    height: 130px;
+    min-height: 130px;
+    height: auto;
     
     background-color: rgba(110, 254, 254, 0.596);
     margin: 25px 10px;
@@ -190,11 +197,12 @@ section{
   }
 .category-img{            
     height: 100px;
-    margin-top: 10px;
+    margin-top: 15px;
     width: 100px;
+    margin-left: 10px;
 
   }
-.categoru-des{
+.category-des{
     margin-top: 10px;
     margin-left:30px;
     
