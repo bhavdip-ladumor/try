@@ -189,9 +189,9 @@ section{
     color: black;
   }
 .category-img{            
-    height: 25vw;
+    height: 100px;
     margin-top: 10px;
-    width: 25vw;
+    width: 100px;
 
   }
 .categoru-des{
@@ -252,4 +252,16 @@ section{
         height: 35px;
         width: 100px;
     } */
+
+    .category-img{            
+      height: 100px;
+      margin-top: 10px;
+      width: 100px;
+  
+    }
+  .categoru-des{
+      margin-top: 10px;
+      margin-left:30px;
+  }
+      
 }
