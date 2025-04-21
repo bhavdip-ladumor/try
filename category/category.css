@@ -32,6 +32,17 @@ body{
     /* display: flex; */
     margin-top: 10px;
 }
+
+
+@keyframes animain {
+  from {opacity: 0; position: relative;
+    top: 20px;}
+  to {opacity: 1; position: relative;
+    top: 0px;}  
+}
+.about.in-view{
+    animation: animain 1s ease;
+  }
 .about{
     
     margin: 10px 10px 0px 10px;
@@ -48,6 +59,9 @@ body{
     border-radius: 10px;
     padding-bottom: 5px;
     gap: 3vw;
+}
+.container.in-view{
+    animation: animain 1s ease;
 }
 .item-heading{
     width: 100vw;    
