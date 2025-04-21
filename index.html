@@ -7,7 +7,31 @@
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
-    <div class="nav">
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-appear"); return;
+      }
+        entry.target.classList.remove("in-appear");
+      
+    });
+  });
+  // {
+  //   threshold: 0.1 // Trigger when 10% of the element is in view
+  // }
+
+
+// Select all elements inside the body
+const allAnimatedElements = document.querySelectorAll('.animate-appear');
+allAnimatedElements.forEach((element) => 
+  observer.observe(element));
+});
+
+  </script>
+    <div class="nav ">
         <div class="logo">
             <img class="logo-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjpaJEaaszHsE07Nk4N3p5nwLduTWcSK0AyK3-3_1IEuRA2txGWPebRcOkFVXMqWanRbYhBfmVwZ4eq7dC4NAnCFhQzq4di7UoAzHcH_at1F0d0HHkQEdCO9CxjLLjaFYbEdY-CENjpWkFoBfaZD4t3UfdSAoU110_VqNYgCvzqY9igs8zNigt1FpN8Wg6Y/w238-h320/UTTAMHUBLOGO.png" alt="logo img" loading="lazy">
         </div>
@@ -15,7 +39,7 @@
             <img class="brand-name-img" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj3qAc-8MjUDA96FvYQr7EPgTlyHmBvrHF_5pt2BB8oZa6iLa0qWW_k01qubnY0CYXxeL0yArL-o3LTydRwDbGH9UfvEJ8APCiLmB6fh4Coa1rrJQDE6SwvV9DCcwMYsJpoQgobN3BPIjUwJSdfdbirGQGGJqfeqjYoJGaaCZaZ3Xq-5G3PQS7U_g_dJChj/s320/uttamhuBNAME.png" alt="brand name" loading="lazy">
         </div>
     </div>
-    <div class="nav-two">
+    <div class="nav-two animate-appear">
         <!-- <div class="about-us"></div>
         <div class="contact-us"></div> -->
         <button id="about-us">about us</button>
@@ -57,7 +81,7 @@
               📍 <strong>Location:</strong> Based in India<br>
               📞 <strong>Phone:</strong> +91 97243 62981<br>
               📞 <strong>Whatsapp:</strong> <a href="https://wa.me/9724362981?text=I%20am%20interested%20in%20your%20business%20/%20I%20need%20help
-              ">click here to msg</a>
+              ">click here to msg</a><br>
               🌐 <strong>Website:</strong> <a href="http://www.uttamhub.com" target="_blank">www.uttamhub.com</a><br>
               📧 <strong>Email:</strong> org.uttamhub@gamil.com
             </p>
@@ -83,7 +107,7 @@
         });
         </script>
      </div>
-     <div class="slide">
+     <div class="slide animate-appear">
         <div class="slider-container">
           <div class="slider-track">
             <a href="https://wa.me/9724362981?text=તમારી%20જરૂરિયાત%20છે%20(કેરી)%0Aઅમારી%20વેબસાઇટ%20www.uttamhub.com%20ના%20મધ્યમ%20થી%20અમારો%20સંપર્ક%20કરવા%20બદલ%20આભાર%0A
@@ -101,9 +125,35 @@
           </div>
         </div>
       </div>
+
+    <script>
+          document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in-view"); return;
+        }
+          entry.target.classList.remove("in-view");
+        
+      });
+    });
+    // {
+    //   threshold: 0.1 // Trigger when 10% of the element is in view
+    // }
+  
+
+  // Select all elements inside the body
+  const allAnimatedElements = document.querySelectorAll('.animate');
+  allAnimatedElements.forEach((element) => 
+    observer.observe(element));
+});
+
+    </script>
+
+
  <section>
-    <a href="category/mahilla.html" class="category-link">
-        <div class="category-container">
+    <a href="category/mahilla.html" class="category-link ">
+        <div class="category-container animate">
           <img class="category-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhWo3vD_4-OxD5UDcLV-w2OhdSyYDutvctXn4y7iI_sxNJnDBhCXa3RNe5P-Q6fE-p00t5VMaA2OH1XU1sqHVwJ767BM-OE5Ck2vXFgAbf68SqGm8iLzQdK2gbtaY-XUhEVkodStNP0OamYQlO7QbKSfZhi1SEkqG3Pl4Te-Ua-zoRwxiW299ZDwMF1p8o" alt="img" loading="lazy">
           <div class="category-des">
             <h1>મહિલા સ્પેશિયલ</h1>
@@ -115,10 +165,11 @@
           </div>
         </div>
       </a>
-    <div class="category-container">
+    <div class="category-container animate">
         comming soon
     </div>
-    <div class="category-container">comming soon</div>
+    <div class="category-container animate">comming soon</div>
+    <div class="category-container animate">comming soon</div>
     
  </section>
     
