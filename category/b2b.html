@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b2b</title>
+    <link rel="stylesheet" href="category.css">
+</head>
+<body>
+    <header>
+        <!-- <img class="category-img" src="https://blogger.googleusercontent.com/img/a/AVvXsEhWo3vD_4-OxD5UDcLV-w2OhdSyYDutvctXn4y7iI_sxNJnDBhCXa3RNe5P-Q6fE-p00t5VMaA2OH1XU1sqHVwJ767BM-OE5Ck2vXFgAbf68SqGm8iLzQdK2gbtaY-XUhEVkodStNP0OamYQlO7QbKSfZhi1SEkqG3Pl4Te-Ua-zoRwxiW299ZDwMF1p8o" alt="img"> -->
+        <h1>business related</h1>
+        <a href="../index.html" style="font-size: 0.8em;">go to the home</a>
+    </header>
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        return;
+      }
+      entry.target.classList.remove("in-view");
+    });
+  }, { // Options object starts here
+    threshold: 0 // Trigger when 50% of the element is in view
+  });
+
+  // Select all elements with the class 'animate' inside the body
+  const allAnimatedElements = document.querySelectorAll('.animate');
+  allAnimatedElements.forEach((element) => {
+    observer.observe(element);
+  });
+});
+
+
+  </script>
